@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c42a00a475.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="name-header">
+                <p>Nathan Lee</p>
+            </div>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Aspiring Software Developer</p>
+            <h1>Hi, I'm <span>Nathan</span> Lee</h1>
+        </div>
+    </div>
+</div>
+
+<!--about section--> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/linkedin1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! My name is Nathan and I am a second year student studying a Bachelor of Commerce at UBC.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Interests</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>University of British Columbia</span>
+                            <br>Combined Major in Computer Science and Business (intended)
+                            <br>
+                            <br>Deans Honour Roll (Cumulative GPA: 3.80 - Ranked top 10%)
+                            <br>
+                            <br>Relevant Courses: Computation, Programs, and Programming, Software Construction, Introduction to Management Information Systems
+                            </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Hello Hacks!</span>
+                            <br>Skills Learned: Figma, JS, Git
+                            <br> 
+                            <br>Awarded top three finalist in a weekend long hackathon hosted by UBC BizTech.</li>
+                        <li><span>nwHacks</span>
+                            <br>Skills Learned: React, OpenAI, HTML/CSS
+                            <br> 
+                            <br>Competed in Western Canadas largest hackathon and successfully created a web-based React application for project idea generation.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Fitness</span><br>Fitness is a core interest that I recently integrated into my everyday life. Taking a step back from school and purely focusing on weightlifting has had tremendous benefits to my self-confidence as well as my mental and physical health. It is an interest that builds up my courage to take on daunting challenges academically and socially. </li>
+                        <li><span>Sports/eSports</span><br>Professionally sports and eSports is a core interest that I have passionately raved about ever since I was little. Building a connection with a professional team and experiencing the feelings of victory and defeat vicariously is one of the most exhilarating feelings. </li>
+                        <li><span>Music</span><br>Music is a core interest that has shifted constantly throughout my life. From Korean drama OSTs to rap, my music interest has had its share of diverse phases. The ability to express my current emotions and changing interests is a key reason why music has become a significant interest in my life. 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--portolio section--> 
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Personal Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/angry duck.gif">
+                <div class="layer">
+                    <h3>Quacktrack</h3>
+                    <p>A Google Chrome extension that tracks website screen time and productivity patterns, developed using Google APIs and Python.</p>
+                    <a href="https://github.com/nathqnleee/quacktrack-chrome-extension"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/dancing.gif">
+                <div class="layer">
+                    <h3>Project Panini</h3>
+                    <p>A project idea generator powered by OpenAI to auto-generate creative ideas centered on key word inputs.</p>
+                    <a href="https://github.com/nathqnleee/project-panini"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/giphy.gif">
+                <div class="layer">
+                    <h3>MyGoalTracker</h3>
+                    <p>A fitness goal tracker GUI developed using Java to help passionate gym goers to meet their goals.</p>
+                    <a href="https://github.students.cs.ubc.ca/CPSC210-2022W-T2/project_y0c3t"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--contact me section--> 
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-paper-plane"></i> nsjlee33@hotmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> (587) 700-0839</p>
+                <div class="social-icons">
+                    <a href="https://github.com/nathqnleee"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/nathqnlee/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/nathanseungjinlee/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/RESUME (3).pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+</body>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+
+        }
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+</html>
